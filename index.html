@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <section class="w-[80%] h-[500px] flex flex-wrap justify-between items-center mx-auto my-[50px]">
+        <figure class="w-[40%] h-full overflow-hidden"><img class="w-full h-full object-cover" src="img/gettyimages-1146431497.webp" alt=""></figure>
+        <div class="w-[50%] h-full flex flex-wrap justify-center content-between">
+            <nav class="w-full flex justify-center bg-slate-600">
+                <ul id="menu" class="w-full  flex justify-between items-center py-[5px] bg-black">
+                    <li onclick="func1(event)" data-value="history" class="text-white h-[40px] w-[30%] flex justify-center items-center p-[5px] text-[25px] transition-all duration-700">HISTORY</li>
+                    <li onclick="func1(event)" data-value="vision" class="text-white h-[40px] w-[30%] flex justify-center items-center p-[5px] text-[25px] transition-all duration-700">VISION</li>
+                    <li onclick="func1(event)" data-value="goals" class="text-white h-[40px] w-[30%] flex justify-center items-center p-[5px] text-[25px] transition-all duration-700">GOALS</li>
+                </ul>
+            </nav>
+
+            <div id="box" class="w-full relative h-fit ">
+                <p id="1stext" class="relative top-0 left-0 h-fit p-10 text-black transition-all duration-700" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias sit aspernatur amet rerum, animi ipsum ipsam doloribus laboriosam eaque cupiditate aperiam nam eos, praesentium eum. Quo praesentium exercitationem totam quibusdam quis adipisci? Ut saepe fugiat veniam quisquam officiis adipisci pariatur harum doloremque eaque aspernatur, praesentium quo facere non necessitatibus eius id sunt illo, ea cupiditate quam corrupti aut maiores rem? Laborum, officia. Fugit ab at iste explicabo vero, eum voluptas autem temporibus possimus repellat veniam sunt laborum. Commodi optio officia amet culpa sed qui ducimus, adipisci, incidunt debitis excepturi ad reiciendis velit? Illo, ullam exercitationem? Repudiandae expedita ab sint fugit ex, omnis quos neque, laboriosam quia aliquid quae autem officia dolor! Laborum, impedit voluptatum perferendis optio ratione eaque consectetur.</p>
+                <p id="history" class="absolute top-0 left-0 h-fit p-10 opacity-0 text-black transition-all duration-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellat quo itaque accusamus, magnam eaque sunt dolorem dolor nisi, nesciunt tenetur molestiae corporis praesentium porro quam dignissimos voluptates tempora eum? Molestiae unde minima doloribus nemo incidunt facilis cupiditate eius? Iusto excepturi dolor atque tempore, consequatur odio delectus dolorem accusamus. Officiis alias nobis consequatur reiciendis repellat quidem et laborum non soluta, commodi numquam eligendi odio rem fugit saepe consequuntur voluptatibus doloribus autem corporis quia repellendus accusantium optio facere! Praesentium nisi neque iusto placeat eveniet dolores repellat eaque quas architecto natus consectetur optio eos quod, quibusdam beatae. Necessitatibus accusamus adipisci fugit deserunt!</p>
+                <p id="vision" class="absolute top-0 left-0 p-10 opacity-0 text-black transition-all duration-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed expedita neque debitis optio quae nihil rerum reiciendis deserunt nesciunt. In aliquid reprehenderit voluptatem hic soluta consequatur esse adipisci, aut ea? Corporis velit quasi accusamus eos optio vel modi odio unde sapiente tenetur cumque numquam sunt omnis veniam quae enim animi atque beatae ad earum incidunt sed debitis, asperiores necessitatibus. Reprehenderit, esse recusandae. Eos animi consectetur autem sed culpa? Autem provident rerum, porro quae assumenda voluptates nesciunt impedit veniam voluptas ratione ad dolores fuga eligendi eos minima consequuntur nihil vero praesentium eveniet hic dolore cupiditate illo, non quia? Provident rerum, fuga facilis tenetur cumque nisi dicta obcaecati voluptate expedita ex pariatur saepe vitae. Error eligendi molestiae pariatur mollitia vitae necessitatibus alias possimus, commodi totam excepturi, animi iure! Odio mollitia minima molestias quaerat, inventore consequuntur itaque assumenda esse molestiae quod quis corrupti iure ..</p>
+                <p id="goals" class="absolute top-0 left-0 p-10 opacity-0 text-black transition-all duration-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in ipsa accusamus doloremque iure sed, voluptas ab corporis ipsam provident delectus unde error quas nam debitis. Corporis cum maxime quasi error natus hic illo a beatae obcaecati odit, voluptas excepturi suscipit tempora numquam ipsum quod. Velit at facere officia quidem molestiae voluptas, quo corporis. Laudantium, quo enim similique molestiae eum itaque saepe sapiente aliquam officia consequuntur officiis, incidunt a possimus?</p>
+            </div>
+        </div>
+
+    </section>
+    
+    <script>
+        let _li = document.querySelectorAll('#menu>li')
+        let _p = document.querySelectorAll('#box>p')
+        function func1(e){
+            _li.forEach((val)=>{
+                val.style.backgroundColor = 'black'
+            })
+            e.target.style.backgroundColor ='gray'
+            let valuee = e.target.getAttribute('data-value')
+            _p.forEach((val)=>{
+                val.style.opacity = 0
+            })
+            document.getElementById(valuee).style.opacity = 1
+        }
+    </script>
+    
+</body>
+<script src="js.js"></script>
+</html>
