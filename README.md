@@ -1,5 +1,5 @@
 # trick25-tabs
-- [Demo Project](https://katayoon-faraji-web.github.io/trick24-slider/)
+- [Demo Project](https://katayoon-faraji-web.github.io/trick25-tabs/)
 
 - Developed by katayoon faraji
 
